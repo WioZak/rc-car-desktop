@@ -1,0 +1,14 @@
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\bin\Debug\DesktopApp.exe.config
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp.csprojResolveAssemblyReference.cache
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\MainWindow.g.cs
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\App.g.cs
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp_MarkupCompile.cache
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp_MarkupCompile.lref
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\bin\Debug\DesktopApp.exe
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\bin\Debug\DesktopApp.pdb
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\MainWindow.baml
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp.g.resources
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp.Properties.Resources.resources
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp.csproj.GenerateResource.Cache
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp.exe
+c:\users\wiola\documents\visual studio 2015\Projects\DesktopApp\DesktopApp\obj\Debug\DesktopApp.pdb
