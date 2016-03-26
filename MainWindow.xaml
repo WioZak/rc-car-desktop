@@ -7,19 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-<<<<<<< HEAD
         <Button x:Name="goButton" Content="Go" HorizontalAlignment="Left" Height="32" Margin="324,73,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.236,0.318" Click="GoButton_Click"/>
         <Button x:Name="stopButton" Content="Stop" HorizontalAlignment="Left" Height="32" Margin="324,135,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.236,0.318" Click="StopButton_Click"/>
         <TextBox x:Name="portTextBox" HorizontalAlignment="Left" Height="28" Margin="36,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" PreviewTextInput="NumberValidationTextBox" Text="8001" TextChanged="GetPort"/>
         <TextBox x:Name="ipTextBox" HorizontalAlignment="Left" Height="28" Margin="36,73,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="159" TextChanged="GetIp"/>
         <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Height="32" Margin="36,178,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.236,0.318" Click="ConnectButton_Click"/>
         <Button x:Name="disconnectButton_Copy" Content="Disconnect" HorizontalAlignment="Left" Height="32" Margin="36,233,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.236,0.318" Click="DisconnectButton_Click"/>
-=======
-        <Button x:Name="goButton" Content="Go" HorizontalAlignment="Left" Height="32" Margin="164,173,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.236,0.318" Click="GoButton_Click"/>
-        <Button x:Name="stopButton" Content="Stop" HorizontalAlignment="Left" Height="32" Margin="164,235,0,0" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.236,0.318" Click="StopButton_Click"/>
-        <TextBox x:Name="portTextBox" HorizontalAlignment="Left" Height="28" Margin="164,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" TextChanged="portTextBox_TextChanged" PreviewTextInput="NumberValidationTextBox" Text="8001"/>
-        <TextBox x:Name="ipTextBox" HorizontalAlignment="Left" Height="28" Margin="164,52,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="159" TextChanged="ipTextBox_TextChanged"/>
->>>>>>> 7dd64ca9a4cfde71b37cb9daf906578c96fa79df
 
     </Grid>
 </Window>
