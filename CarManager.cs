@@ -22,7 +22,7 @@ namespace DesktopApp
             }
             catch (Exception e)
             {
-                MessageBox.Show("Connection error...  " + e.StackTrace + "leeeeeeeeeeeeeelelelelelelelel");  
+                MessageBox.Show("Connection error...  " + e.StackTrace);  
             }
         }
 
