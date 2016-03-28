@@ -11,14 +11,10 @@ namespace DesktopApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        //DialogBox dialogBox = new DialogBox(); // @todo add dialogboxes to catch exceptions
         CarManager car = new CarManager();
         public MainWindow()
         {
             InitializeComponent();
-            goButton.Click += GoButton_Click;
-            stopButton.Click += StopButton_Click;
-            connectButton.Click += ConnectButton_Click;
         }
 
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)

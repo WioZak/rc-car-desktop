@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Net.Sockets;
+using System.Windows;
 
 namespace DesktopApp
 {
@@ -21,19 +22,27 @@ namespace DesktopApp
             }
             catch (Exception e)
             {
-                Console.WriteLine("Connection error...  " + e.StackTrace); // @todo change this to dialogbox
+                MessageBox.Show("Connection error...  " + e.StackTrace + "leeeeeeeeeeeeeelelelelelelelel");  
             }
         }
 
         private void SendCommand(string command)
         {
-            //Enter the string to be transmitted:
-            string str = command;
-            Stream stm = tcpclnt.GetStream();
-            ASCIIEncoding asen = new ASCIIEncoding();
-            byte[] b = asen.GetBytes(str);
-            //Transmitting.....
-            stm.Write(b, 0, b.Length);
+            try
+            {
+                //Enter the string to be transmitted:
+                string str = command;
+                Stream stm = tcpclnt.GetStream();
+                ASCIIEncoding asen = new ASCIIEncoding();
+                byte[] b = asen.GetBytes(str);
+                //Transmitting.....
+                stm.Write(b, 0, b.Length);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Can't send the command.");
+            }
+            
         }
         public void Go()
         {
