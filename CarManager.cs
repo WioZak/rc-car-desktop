@@ -5,54 +5,42 @@ using System.Text;
 using System.Net.Sockets;
 using System.Windows;
 
-namespace DesktopApp
+namespace RCCarDesktop
 {
     class CarManager
     {
-        public string IP { get; set; }
-        public int Port { get; set; }
+        public string IP;
+        public int Port;
 
         TcpClient tcpclnt;
+        private string goForward = "g";
+        private string stop = "s";
 
         public void Connect(string ip, int port) 
         {
             tcpclnt = new TcpClient();
-            try
-            {
-                tcpclnt.Connect(ip, port);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Connection error...  ");  
-            }
+            tcpclnt.Connect(ip, port);
         }
 
         private void SendCommand(string command)
         {
-            try
-            {
-                //Enter the string to be transmitted:
-                string str = command;
-                Stream stm = tcpclnt.GetStream();
-                ASCIIEncoding asen = new ASCIIEncoding();
-                byte[] b = asen.GetBytes(str);
-                //Transmitting.....
-                stm.Write(b, 0, b.Length);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Can't send the command.");
-            }
             
+            //Enter the string to be transmitted:
+            string str = command;
+            Stream stm = tcpclnt.GetStream();
+            ASCIIEncoding asen = new ASCIIEncoding();
+            byte[] b = asen.GetBytes(str);
+            //Transmitting.....
+            stm.Write(b, 0, b.Length);    
         }
         public void Go()
         {
-            SendCommand("g");
+            SendCommand(goForward);
         }
 
         public void Stop()
         {
-            SendCommand("s");
+            SendCommand(stop);
         }
 
         public void Disconnect()

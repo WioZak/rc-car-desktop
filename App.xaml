@@ -1,7 +1,7 @@
-﻿<Application x:Class="DesktopApp.App"
+﻿<Application x:Class="RCCarDesktop.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DesktopApp"
+             xmlns:local="clr-namespace:RCCarDesktop"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

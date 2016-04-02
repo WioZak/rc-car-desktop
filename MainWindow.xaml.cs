@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Text.RegularExpressions;
 
-namespace DesktopApp
+namespace RCCarDesktop
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,25 +24,46 @@ namespace DesktopApp
         }
 
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
-        {           
-            car.Connect(car.IP, car.Port);
+        {
+            try
+            {
+                car.Connect(car.IP, car.Port);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Connection error...  ");
+            }
         }
 
         private void GoButton_Click(object sender, RoutedEventArgs e)
         {
-            car.Go();
+            try
+            {
+                car.Go();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Can't send the command.");
+            }
         }
 
         private void StopButton_Click(object sender, RoutedEventArgs e)
         {
-            car.Stop();
+            try
+            {
+                car.Stop();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Can't send the command.");
+            }
         }
 
         private void GetIp(object sender, TextChangedEventArgs e)
         {
             TextBox ipTextBox = (TextBox)sender;
             string ip = ipTextBox.Text;
-            car.IP = ip; //using car properties because don't know how to send ip and port to connect method
+            car.IP = ip;
         }
 
         private void GetPort(object sender, TextChangedEventArgs e)

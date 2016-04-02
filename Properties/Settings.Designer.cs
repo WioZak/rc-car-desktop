@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DesktopApp.Properties
+namespace RCCarDesktop.Properties
 {
 
 
