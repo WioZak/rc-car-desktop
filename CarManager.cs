@@ -12,17 +12,18 @@ namespace DesktopApp
         public string IP { get; set; }
         public int Port { get; set; }
 
+        TcpClient tcpclnt;
 
-        TcpClient tcpclnt = new TcpClient();
         public void Connect(string ip, int port) 
         {
+            tcpclnt = new TcpClient();
             try
             {
                 tcpclnt.Connect(ip, port);
             }
             catch (Exception e)
             {
-                MessageBox.Show("Connection error...  " + e.StackTrace);  
+                MessageBox.Show("Connection error...  ");  
             }
         }
 
