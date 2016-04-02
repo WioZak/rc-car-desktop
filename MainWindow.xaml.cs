@@ -11,7 +11,11 @@ namespace RCCarDesktop
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string IP;
+        private int Port;
+
         CarManager car = new CarManager();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +31,7 @@ namespace RCCarDesktop
         {
             try
             {
-                car.Connect(car.IP, car.Port);
+                car.Connect(IP, Port);
             }
             catch (Exception)
             {
@@ -63,14 +67,14 @@ namespace RCCarDesktop
         {
             TextBox ipTextBox = (TextBox)sender;
             string ip = ipTextBox.Text;
-            car.IP = ip;
+            IP = ip;
         }
 
         private void GetPort(object sender, TextChangedEventArgs e)
         {
             TextBox portTextBox = (TextBox)sender;
             int port = Convert.ToInt32(portTextBox.Text);
-            car.Port = port;            
+            Port = port;            
         }
 
         private void DisconnectButton_Click(object sender, RoutedEventArgs e)

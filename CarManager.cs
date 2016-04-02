@@ -9,9 +9,6 @@ namespace RCCarDesktop
 {
     class CarManager
     {
-        public string IP;
-        public int Port;
-
         TcpClient tcpclnt;
         private string goForward = "g";
         private string stop = "s";
